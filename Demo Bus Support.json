@@ -1,0 +1,1254 @@
+{
+  "Version": "2019-10-30",
+  "StartAction": "3c746f55-b335-4729-a5bd-67009f071807",
+  "Metadata": {
+    "entryPointPosition": {
+      "x": -1380,
+      "y": -1000
+    },
+    "ActionMetadata": {
+      "Set queue for English": {
+        "position": {
+          "x": 1120,
+          "y": -1040
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "QueueId": {
+            "displayName": "Demo Bus Support - English"
+          }
+        },
+        "queue": {
+          "text": "Demo Bus Support - English"
+        }
+      },
+      "Tranfer to Queue": {
+        "position": {
+          "x": 1680,
+          "y": -780
+        },
+        "isFriendlyName": true
+      },
+      "Set queue for Hindi": {
+        "position": {
+          "x": 1120,
+          "y": -780
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "QueueId": {
+            "displayName": "Demo Bus Support - Hindi"
+          }
+        },
+        "queue": {
+          "text": "Demo Bus Support - Hindi"
+        }
+      },
+      "Input 2 Verify": {
+        "position": {
+          "x": 560,
+          "y": -260
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "Text": {
+            "useDynamic": true
+          }
+        },
+        "useDynamic": true
+      },
+      "Bus Stop Code is": {
+        "position": {
+          "x": -840,
+          "y": -260
+        },
+        "isFriendlyName": true
+      },
+      "Input 1 verify": {
+        "position": {
+          "x": -560,
+          "y": -260
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "Text": {
+            "useDynamic": true
+          }
+        },
+        "useDynamic": true
+      },
+      "Service No is": {
+        "position": {
+          "x": 280,
+          "y": -260
+        },
+        "isFriendlyName": true
+      },
+      "Set ButStopCode to attribute": {
+        "position": {
+          "x": -1120,
+          "y": -260
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "Attributes": {
+            "BusStopCode": {
+              "useDynamic": true
+            }
+          }
+        },
+        "dynamicParams": [
+          "BusStopCode"
+        ]
+      },
+      "Set ServiceNo to attribute": {
+        "position": {
+          "x": 0,
+          "y": -260
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "Attributes": {
+            "ServiceNo": {
+              "useDynamic": true
+            }
+          }
+        },
+        "dynamicParams": [
+          "ServiceNo"
+        ]
+      },
+      "Store Service Number": {
+        "position": {
+          "x": -280,
+          "y": -260
+        },
+        "isFriendlyName": true,
+        "conditionMetadata": [],
+        "countryCodePrefix": "+1"
+      },
+      "Invalid  Bus Stop Code": {
+        "position": {
+          "x": -1400,
+          "y": 0
+        },
+        "isFriendlyName": true
+      },
+      "Invoke AWS Lambda Function": {
+        "position": {
+          "x": 840,
+          "y": -260
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "LambdaFunctionARN": {
+            "displayName": "DemoBusSupport"
+          },
+          "LambdaInvocationAttributes": {
+            "BusStopCode": {
+              "useDynamic": true
+            },
+            "ServiceNo": {
+              "useDynamic": true
+            }
+          }
+        },
+        "dynamicMetadata": {
+          "BusStopCode": true,
+          "ServiceNo": true
+        }
+      },
+      "To repeat sub-menu": {
+        "position": {
+          "x": 704,
+          "y": -792
+        },
+        "isFriendlyName": true
+      },
+      "3c746f55-b335-4729-a5bd-67009f071807": {
+        "position": {
+          "x": -1120,
+          "y": -1040
+        }
+      },
+      "To Repeat Main Menu": {
+        "position": {
+          "x": -560,
+          "y": -780
+        },
+        "isFriendlyName": true
+      },
+      "Sub Menu - Select Language": {
+        "position": {
+          "x": 0,
+          "y": -780
+        },
+        "isFriendlyName": true,
+        "conditionMetadata": [
+          {
+            "id": "4b85c4f7-7307-4a5b-833a-4d1fe8cb2696",
+            "value": "1"
+          },
+          {
+            "id": "cc41c9a4-b0ee-45ff-a8a8-d7e8f7f1a0a0",
+            "value": "2"
+          }
+        ]
+      },
+      "Check Hour of operation": {
+        "position": {
+          "x": -563.2,
+          "y": -1120
+        },
+        "isFriendlyName": true,
+        "parameters": {
+          "HoursOfOperationId": {
+            "displayName": "Demo Bus Support"
+          }
+        },
+        "Hours": {
+          "id": "arn:aws:connect:us-west-2:593543055628:instance/387ab6db-28e5-4448-8b13-46cbad136ef9/operating-hours/32544f39-b7b3-4bbe-a2e1-2defae3faee8",
+          "text": "Demo Bus Support"
+        }
+      },
+      "ff4812a0-a66f-4f8c-885e-e92d9a02ee94": {
+        "position": {
+          "x": 1400,
+          "y": -260
+        },
+        "parameters": {
+          "Text": {
+            "useDynamic": true
+          }
+        },
+        "useDynamic": true
+      },
+      "Store Customer Data": {
+        "position": {
+          "x": -1400,
+          "y": -260
+        },
+        "isFriendlyName": true,
+        "conditionMetadata": [],
+        "countryCodePrefix": "+1"
+      },
+      "Wecome Promt and Main Menu": {
+        "position": {
+          "x": -840,
+          "y": -1040
+        },
+        "isFriendlyName": true,
+        "conditionMetadata": [
+          {
+            "id": "afda9430-073c-455d-9a9d-8c7f15eb1140",
+            "value": "1"
+          },
+          {
+            "id": "81b3bf18-2634-42dc-b140-a19068535169",
+            "value": "2"
+          }
+        ]
+      },
+      "Loop to set English queue": {
+        "position": {
+          "x": 1400,
+          "y": -1040
+        },
+        "isFriendlyName": true
+      },
+      "At capacity or error during tranfer": {
+        "position": {
+          "x": 1960,
+          "y": -780
+        },
+        "isFriendlyName": true
+      },
+      "Loop to set Hindi queue": {
+        "position": {
+          "x": 1400,
+          "y": -780
+        },
+        "isFriendlyName": true
+      },
+      "40dc6bb6-1846-4f7f-b152-4de8e5f33208": {
+        "position": {
+          "x": 1120,
+          "y": -260
+        }
+      },
+      "18f2fe13-1955-4ee2-baa3-cc55b0524170": {
+        "position": {
+          "x": -1120,
+          "y": 0
+        }
+      },
+      "73097266-00da-4667-99d1-fc49ccf96934": {
+        "position": {
+          "x": 0,
+          "y": 0
+        }
+      },
+      "bb49bdb4-363c-4c03-bf9b-b006b90570d6": {
+        "position": {
+          "x": -280,
+          "y": 0
+        }
+      },
+      "loop to store Bus Stop Code": {
+        "position": {
+          "x": -1400,
+          "y": 260
+        },
+        "isFriendlyName": true
+      },
+      "c7f9f715-c85e-42df-840e-b61452acc2d6": {
+        "position": {
+          "x": 1393.6,
+          "y": -13.6
+        }
+      },
+      "Loop for sub-menu": {
+        "position": {
+          "x": 608.8,
+          "y": -478.4
+        },
+        "isFriendlyName": true
+      },
+      "Loop to for Main Menu": {
+        "position": {
+          "x": -280,
+          "y": -780
+        },
+        "isFriendlyName": true
+      },
+      "Out of Hour": {
+        "position": {
+          "x": 3.2,
+          "y": -1118.4
+        },
+        "isFriendlyName": true
+      },
+      "Post-Response Menu": {
+        "position": {
+          "x": 2667.2,
+          "y": -275.2
+        },
+        "isFriendlyName": true,
+        "conditionMetadata": [
+          {
+            "id": "66db4ea7-bef2-49a8-9a44-d1612bfcabed",
+            "value": "1"
+          },
+          {
+            "id": "d541f4ab-a2b4-400b-b09a-bf779249f4fe",
+            "value": "2"
+          },
+          {
+            "id": "e60f323a-3b93-4d5d-ab97-4d54fcde5d9e",
+            "value": "3"
+          }
+        ]
+      },
+      "bb6ed4ef-08e1-4933-bebb-ed42b077f683": {
+        "position": {
+          "x": 3075.2,
+          "y": 450.4
+        }
+      }
+    },
+    "Annotations": [],
+    "name": "Demo Bus Support",
+    "description": "",
+    "type": "contactFlow",
+    "status": "published",
+    "hash": {}
+  },
+  "Actions": [
+    {
+      "Parameters": {
+        "QueueId": "arn:aws:connect:us-west-2:593543055628:instance/387ab6db-28e5-4448-8b13-46cbad136ef9/queue/8df0d95b-275d-45ce-9de3-3a39f0fadb17"
+      },
+      "Identifier": "Set queue for English",
+      "Type": "UpdateContactTargetQueue",
+      "Transitions": {
+        "NextAction": "Tranfer to Queue",
+        "Errors": [
+          {
+            "NextAction": "Loop to set English queue",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {},
+      "Identifier": "Tranfer to Queue",
+      "Type": "TransferContactToQueue",
+      "Transitions": {
+        "NextAction": "At capacity or error during tranfer",
+        "Errors": [
+          {
+            "NextAction": "At capacity or error during tranfer",
+            "ErrorType": "QueueAtCapacity"
+          },
+          {
+            "NextAction": "At capacity or error during tranfer",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "QueueId": "arn:aws:connect:us-west-2:593543055628:instance/387ab6db-28e5-4448-8b13-46cbad136ef9/queue/13c599c9-33e6-4bbc-b13f-c1b516ff8946"
+      },
+      "Identifier": "Set queue for Hindi",
+      "Type": "UpdateContactTargetQueue",
+      "Transitions": {
+        "NextAction": "Tranfer to Queue",
+        "Errors": [
+          {
+            "NextAction": "Loop to set Hindi queue",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "$.Attributes.ServiceNo"
+      },
+      "Identifier": "Input 2 Verify",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "Invoke AWS Lambda Function",
+        "Errors": [
+          {
+            "NextAction": "Invoke AWS Lambda Function",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "Entered Bus Stop Code is "
+      },
+      "Identifier": "Bus Stop Code is",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "Input 1 verify",
+        "Errors": [
+          {
+            "NextAction": "Input 1 verify",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "$.StoredCustomerInput"
+      },
+      "Identifier": "Input 1 verify",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "Store Service Number",
+        "Errors": [
+          {
+            "NextAction": "Store Service Number",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "Entered Service Number is "
+      },
+      "Identifier": "Service No is",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "Input 2 Verify",
+        "Errors": [
+          {
+            "NextAction": "Input 2 Verify",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "BusStopCode": "$.StoredCustomerInput"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "Set ButStopCode to attribute",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "Bus Stop Code is",
+        "Errors": [
+          {
+            "NextAction": "18f2fe13-1955-4ee2-baa3-cc55b0524170",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Attributes": {
+          "ServiceNo": "$.StoredCustomerInput"
+        },
+        "TargetContact": "Current"
+      },
+      "Identifier": "Set ServiceNo to attribute",
+      "Type": "UpdateContactAttributes",
+      "Transitions": {
+        "NextAction": "Service No is",
+        "Errors": [
+          {
+            "NextAction": "73097266-00da-4667-99d1-fc49ccf96934",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "StoreInput": "True",
+        "InputTimeLimitSeconds": "5",
+        "Text": "Please enter yourService Number",
+        "DTMFConfiguration": {
+          "DisableCancelKey": "False",
+          "InterdigitTimeLimitSeconds": "5"
+        },
+        "InputValidation": {
+          "CustomValidation": {
+            "MaximumLength": "4"
+          }
+        }
+      },
+      "Identifier": "Store Service Number",
+      "Type": "GetParticipantInput",
+      "Transitions": {
+        "NextAction": "Set ServiceNo to attribute",
+        "Errors": [
+          {
+            "NextAction": "bb49bdb4-363c-4c03-bf9b-b006b90570d6",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "Please enter the correct Bus Stop Code"
+      },
+      "Identifier": "Invalid  Bus Stop Code",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "loop to store Bus Stop Code",
+        "Errors": [
+          {
+            "NextAction": "loop to store Bus Stop Code",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "LambdaFunctionARN": "arn:aws:lambda:us-west-2:593543055628:function:DemoBusSupport",
+        "InvocationTimeLimitSeconds": "5",
+        "InvocationType": "SYNCHRONOUS",
+        "LambdaInvocationAttributes": {
+          "BusStopCode": "$.Attributes.BusStopCode",
+          "ServiceNo": "$.Attributes.ServiceNo"
+        },
+        "ResponseValidation": {
+          "ResponseType": "JSON"
+        }
+      },
+      "Identifier": "Invoke AWS Lambda Function",
+      "Type": "InvokeLambdaFunction",
+      "Transitions": {
+        "NextAction": "ff4812a0-a66f-4f8c-885e-e92d9a02ee94",
+        "Errors": [
+          {
+            "NextAction": "40dc6bb6-1846-4f7f-b152-4de8e5f33208",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "Sorry, I didn’t get that. Please choose 1 for English or 2 for Hindi."
+      },
+      "Identifier": "To repeat sub-menu",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "Loop for sub-menu",
+        "Errors": [
+          {
+            "NextAction": "Loop for sub-menu",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "FlowLoggingBehavior": "Enabled"
+      },
+      "Identifier": "3c746f55-b335-4729-a5bd-67009f071807",
+      "Type": "UpdateFlowLoggingBehavior",
+      "Transitions": {
+        "NextAction": "Wecome Promt and Main Menu"
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "Sorry, I didn’t get that. Please choose 1 for bus arrival information or 2 to talk to an agent"
+      },
+      "Identifier": "To Repeat Main Menu",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "Loop to for Main Menu",
+        "Errors": [
+          {
+            "NextAction": "Loop to for Main Menu",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "StoreInput": "False",
+        "InputTimeLimitSeconds": "5",
+        "Text": "Press 1 for English\nPresss 2 for Hindi"
+      },
+      "Identifier": "Sub Menu - Select Language",
+      "Type": "GetParticipantInput",
+      "Transitions": {
+        "NextAction": "To repeat sub-menu",
+        "Conditions": [
+          {
+            "NextAction": "Set queue for English",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "1"
+              ]
+            }
+          },
+          {
+            "NextAction": "Set queue for Hindi",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "2"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "To repeat sub-menu",
+            "ErrorType": "InputTimeLimitExceeded"
+          },
+          {
+            "NextAction": "To repeat sub-menu",
+            "ErrorType": "NoMatchingCondition"
+          },
+          {
+            "NextAction": "To repeat sub-menu",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "HoursOfOperationId": "arn:aws:connect:us-west-2:593543055628:instance/387ab6db-28e5-4448-8b13-46cbad136ef9/operating-hours/32544f39-b7b3-4bbe-a2e1-2defae3faee8"
+      },
+      "Identifier": "Check Hour of operation",
+      "Type": "CheckHoursOfOperation",
+      "Transitions": {
+        "NextAction": "Sub Menu - Select Language",
+        "Conditions": [
+          {
+            "NextAction": "Sub Menu - Select Language",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "True"
+              ]
+            }
+          },
+          {
+            "NextAction": "Out of Hour",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "False"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "Sub Menu - Select Language",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "$.LambdaInvocation.ResultData.FinalArivalTime"
+      },
+      "Identifier": "ff4812a0-a66f-4f8c-885e-e92d9a02ee94",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "Post-Response Menu",
+        "Errors": [
+          {
+            "NextAction": "c7f9f715-c85e-42df-840e-b61452acc2d6",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "StoreInput": "True",
+        "InputTimeLimitSeconds": "10",
+        "Text": "Please enter your 5‑digit Bus Stop Code",
+        "DTMFConfiguration": {
+          "DisableCancelKey": "False",
+          "InterdigitTimeLimitSeconds": "5"
+        },
+        "InputValidation": {
+          "CustomValidation": {
+            "MaximumLength": "5"
+          }
+        }
+      },
+      "Identifier": "Store Customer Data",
+      "Type": "GetParticipantInput",
+      "Transitions": {
+        "NextAction": "Set ButStopCode to attribute",
+        "Errors": [
+          {
+            "NextAction": "Invalid  Bus Stop Code",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "StoreInput": "False",
+        "InputTimeLimitSeconds": "8",
+        "Text": "Welcome to the Smart Bus Information Service.\nYou can check bus arrival timings or speak to an agent for further assistance.\nFor bus arrival information, press 1.\nTo connect with an agent for complaints or help, press 2."
+      },
+      "Identifier": "Wecome Promt and Main Menu",
+      "Type": "GetParticipantInput",
+      "Transitions": {
+        "NextAction": "To Repeat Main Menu",
+        "Conditions": [
+          {
+            "NextAction": "Store Customer Data",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "1"
+              ]
+            }
+          },
+          {
+            "NextAction": "Check Hour of operation",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "2"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "To Repeat Main Menu",
+            "ErrorType": "InputTimeLimitExceeded"
+          },
+          {
+            "NextAction": "To Repeat Main Menu",
+            "ErrorType": "NoMatchingCondition"
+          },
+          {
+            "NextAction": "To Repeat Main Menu",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "LoopCount": "2"
+      },
+      "Identifier": "Loop to set English queue",
+      "Type": "Loop",
+      "Transitions": {
+        "NextAction": "bb6ed4ef-08e1-4933-bebb-ed42b077f683",
+        "Conditions": [
+          {
+            "NextAction": "Set queue for English",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "ContinueLooping"
+              ]
+            }
+          },
+          {
+            "NextAction": "bb6ed4ef-08e1-4933-bebb-ed42b077f683",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "DoneLooping"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "Set queue for English",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "We are at capacity, no agent is available at the moment. Please try again later. "
+      },
+      "Identifier": "At capacity or error during tranfer",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "bb6ed4ef-08e1-4933-bebb-ed42b077f683",
+        "Errors": [
+          {
+            "NextAction": "bb6ed4ef-08e1-4933-bebb-ed42b077f683",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "LoopCount": "2"
+      },
+      "Identifier": "Loop to set Hindi queue",
+      "Type": "Loop",
+      "Transitions": {
+        "NextAction": "bb6ed4ef-08e1-4933-bebb-ed42b077f683",
+        "Conditions": [
+          {
+            "NextAction": "Set queue for Hindi",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "ContinueLooping"
+              ]
+            }
+          },
+          {
+            "NextAction": "bb6ed4ef-08e1-4933-bebb-ed42b077f683",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "DoneLooping"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "Set queue for Hindi",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "LoopCount": "3"
+      },
+      "Identifier": "40dc6bb6-1846-4f7f-b152-4de8e5f33208",
+      "Type": "Loop",
+      "Transitions": {
+        "NextAction": "bb6ed4ef-08e1-4933-bebb-ed42b077f683",
+        "Conditions": [
+          {
+            "NextAction": "Invoke AWS Lambda Function",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "ContinueLooping"
+              ]
+            }
+          },
+          {
+            "NextAction": "bb6ed4ef-08e1-4933-bebb-ed42b077f683",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "DoneLooping"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "Invoke AWS Lambda Function",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "LoopCount": "2"
+      },
+      "Identifier": "18f2fe13-1955-4ee2-baa3-cc55b0524170",
+      "Type": "Loop",
+      "Transitions": {
+        "NextAction": "bb6ed4ef-08e1-4933-bebb-ed42b077f683",
+        "Conditions": [
+          {
+            "NextAction": "Set ButStopCode to attribute",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "ContinueLooping"
+              ]
+            }
+          },
+          {
+            "NextAction": "bb6ed4ef-08e1-4933-bebb-ed42b077f683",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "DoneLooping"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "Set ButStopCode to attribute",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "LoopCount": "3"
+      },
+      "Identifier": "73097266-00da-4667-99d1-fc49ccf96934",
+      "Type": "Loop",
+      "Transitions": {
+        "NextAction": "bb6ed4ef-08e1-4933-bebb-ed42b077f683",
+        "Conditions": [
+          {
+            "NextAction": "Set ServiceNo to attribute",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "ContinueLooping"
+              ]
+            }
+          },
+          {
+            "NextAction": "bb6ed4ef-08e1-4933-bebb-ed42b077f683",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "DoneLooping"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "Set ServiceNo to attribute",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "LoopCount": "3"
+      },
+      "Identifier": "bb49bdb4-363c-4c03-bf9b-b006b90570d6",
+      "Type": "Loop",
+      "Transitions": {
+        "NextAction": "bb6ed4ef-08e1-4933-bebb-ed42b077f683",
+        "Conditions": [
+          {
+            "NextAction": "Store Service Number",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "ContinueLooping"
+              ]
+            }
+          },
+          {
+            "NextAction": "bb6ed4ef-08e1-4933-bebb-ed42b077f683",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "DoneLooping"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "Store Service Number",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "LoopCount": "2"
+      },
+      "Identifier": "loop to store Bus Stop Code",
+      "Type": "Loop",
+      "Transitions": {
+        "NextAction": "bb6ed4ef-08e1-4933-bebb-ed42b077f683",
+        "Conditions": [
+          {
+            "NextAction": "Store Customer Data",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "ContinueLooping"
+              ]
+            }
+          },
+          {
+            "NextAction": "bb6ed4ef-08e1-4933-bebb-ed42b077f683",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "DoneLooping"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "Store Customer Data",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "LoopCount": "3"
+      },
+      "Identifier": "c7f9f715-c85e-42df-840e-b61452acc2d6",
+      "Type": "Loop",
+      "Transitions": {
+        "NextAction": "bb6ed4ef-08e1-4933-bebb-ed42b077f683",
+        "Conditions": [
+          {
+            "NextAction": "ff4812a0-a66f-4f8c-885e-e92d9a02ee94",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "ContinueLooping"
+              ]
+            }
+          },
+          {
+            "NextAction": "bb6ed4ef-08e1-4933-bebb-ed42b077f683",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "DoneLooping"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "ff4812a0-a66f-4f8c-885e-e92d9a02ee94",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "LoopCount": "3"
+      },
+      "Identifier": "Loop for sub-menu",
+      "Type": "Loop",
+      "Transitions": {
+        "NextAction": "bb6ed4ef-08e1-4933-bebb-ed42b077f683",
+        "Conditions": [
+          {
+            "NextAction": "Sub Menu - Select Language",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "ContinueLooping"
+              ]
+            }
+          },
+          {
+            "NextAction": "bb6ed4ef-08e1-4933-bebb-ed42b077f683",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "DoneLooping"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "Sub Menu - Select Language",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "LoopCount": "3"
+      },
+      "Identifier": "Loop to for Main Menu",
+      "Type": "Loop",
+      "Transitions": {
+        "NextAction": "bb6ed4ef-08e1-4933-bebb-ed42b077f683",
+        "Conditions": [
+          {
+            "NextAction": "Wecome Promt and Main Menu",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "ContinueLooping"
+              ]
+            }
+          },
+          {
+            "NextAction": "bb6ed4ef-08e1-4933-bebb-ed42b077f683",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "DoneLooping"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "Wecome Promt and Main Menu",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "Your have reached out of support hour. \nPlease try calling later. "
+      },
+      "Identifier": "Out of Hour",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "bb6ed4ef-08e1-4933-bebb-ed42b077f683",
+        "Errors": [
+          {
+            "NextAction": "bb6ed4ef-08e1-4933-bebb-ed42b077f683",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "StoreInput": "False",
+        "InputTimeLimitSeconds": "5",
+        "Text": "Would you like to check another bus?\nPress 1 to check again.\nPress 2 to return to the main menu.\nPress 3 to speak with an agent."
+      },
+      "Identifier": "Post-Response Menu",
+      "Type": "GetParticipantInput",
+      "Transitions": {
+        "NextAction": "bb6ed4ef-08e1-4933-bebb-ed42b077f683",
+        "Conditions": [
+          {
+            "NextAction": "Store Customer Data",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "1"
+              ]
+            }
+          },
+          {
+            "NextAction": "Wecome Promt and Main Menu",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "2"
+              ]
+            }
+          },
+          {
+            "NextAction": "Check Hour of operation",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "3"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "bb6ed4ef-08e1-4933-bebb-ed42b077f683",
+            "ErrorType": "InputTimeLimitExceeded"
+          },
+          {
+            "NextAction": "bb6ed4ef-08e1-4933-bebb-ed42b077f683",
+            "ErrorType": "NoMatchingCondition"
+          },
+          {
+            "NextAction": "bb6ed4ef-08e1-4933-bebb-ed42b077f683",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {},
+      "Identifier": "bb6ed4ef-08e1-4933-bebb-ed42b077f683",
+      "Type": "DisconnectParticipant",
+      "Transitions": {}
+    }
+  ]
+}
