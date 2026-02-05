@@ -16,7 +16,7 @@ def lambda_handler(event, context):
     # LTA DataMall API
     url = "https://datamall2.mytransport.sg/ltaodataservice/v3/BusArrival"
     headers = {
-        "AccountKey": "hN1R2sLbRe2GnXRYEtuZ6Q==",
+        "AccountKey": "<Enter your API Account Key>",
         "Accept": "application/json"
     }
     params = {
@@ -78,3 +78,4 @@ def lambda_handler(event, context):
     return {
         "FinalArivalTime": f"Arriving in {minutes} minutes and {secs} seconds"
     }
+
